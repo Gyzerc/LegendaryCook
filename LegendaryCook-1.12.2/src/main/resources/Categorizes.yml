@@ -1,0 +1,13 @@
+普通食物:
+  display: '&f普通的美食'
+  material: BREAD
+  data: 0
+  amount: 1
+  model: 0
+  lore:
+    - ''
+    - '&#e0ffff收录着各种普通的美食'
+    - ''
+    - '&a&l> &e点击打开'
+  cooks:
+    - '配方1'

@@ -1,0 +1,46 @@
+title: '%cat% &e选择一个配方进行烹饪'
+size: 54
+#烹饪配方出现的格子
+layout: [11,12,13,14,15,20,21,22,23,24,29,30,31,32,33]
+placeholder:
+  lock: '&c - 该配方未解锁 -'
+lore-format:
+  - '%lore%'
+  - ''
+  - '%lock%'
+  - '&f[ &e左键开始烹饪 &f]'
+  - '&f[ &b右键查看成品 &f]'
+customItems:
+  pre:
+    display: '&7上一页'
+    amount: 1
+    material: ARROW
+    data: 0
+    model: 0
+    lore:
+      - ''
+    slot: [47]
+    fuction:
+      type: pre
+  next:
+    display: '&7下一页'
+    amount: 1
+    material: ARROW
+    data: 0
+    model: 0
+    lore:
+      - ''
+    slot: [51]
+    fuction:
+      type: next
+  back:
+    display: '&7返回'
+    amount: 1
+    material: BARRIER
+    data: 0
+    model: 0
+    lore:
+      - ''
+    slot: [49]
+    fuction:
+      type: back

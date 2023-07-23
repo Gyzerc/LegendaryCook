@@ -1,0 +1,17 @@
+name: LegendaryCook
+main: com.legendaryrealms.cook.LegendaryCook
+version: 1.0.1
+softdepend:
+  - HolographicDisplays
+  - ItemsAdder
+  - MMOItems
+  - MythicMobs
+  - DecentHolograms
+  - PlaceholderAPI
+  - CMI
+commands:
+  legendarycook:
+    aliases:
+      - lc
+      - cook
+  legendarycook_convert:

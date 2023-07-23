@@ -1,0 +1,52 @@
+display:
+  material: APPLE
+  data: 0
+  model: 0
+  name: §e蜜汁面包
+  lore:
+    - §f
+    - §f香甜可口的面包。
+settings:
+  mode: mode1
+  game:
+    mode1:
+      addHotTick: 20
+    mode2:
+      speed: 3
+  limit:
+    level: 0
+    hot: 10
+    time: 50
+  chance: 0.9
+  max_recipes_experience: 50.0
+  result:
+    item: 'loot;Loot1'
+    add_cook_experience: 5.0
+    add_recipes_experince: 1.0
+    run:
+      - '[message]&a恭喜！烹饪成功，你获得了 &E蜜汁面包 &a×1'
+  fail:
+    item: ''
+    add_cook_experience: 1.0
+    add_recipes_experince: 0.0
+    run:
+      - '[message]&c烹饪失败！下次再来！'
+recipes:
+  '0':
+    hot: 1
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_INGOT
+    amount: 1
+  '1':
+    hot: 3
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND
+    amount: 1
+  '2':
+    hot: 5
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: GOLD_INGOT
+    amount: 1

@@ -1,0 +1,74 @@
+
+#存储方法 yaml/mysql
+#更改后需重启服务器
+Store: yaml
+Mysql:
+  address: localhost
+  port: 3306
+  database: test
+  user: root
+  password: 123456
+HikariCP:
+  connectionTimeout: 30000
+  #连接超时时间 默认值：30000（30秒）
+  minimumIdle: 10
+  #最小空闲连接数
+  maximumPoolSize: 50
+  #池允许达到的最大大小，包括空闲和正在使用的连接
+settings:
+  level:
+    #最大等级
+    max: 5
+    exp:
+      #对应着每级升级需要的经验值 (始终保持 最大等级-1)
+      0: 100
+      1: 1000
+      2: 5000
+      3: 10000
+      4: 30000
+  bar:
+    hot: '✦'
+    string: '&6&l火候值: %hot%'
+  pot:
+    #烹饪锅方块设置
+    #更改后需重启服务器
+    block:
+      #default:原版方块 ia_block:ItemsAdder方块 ia_furniture:ItemsAdder家具
+      type: default
+      #ID
+      value: CAULDRON
+    hologram:
+      # holographicdisplays / cmi / decentholograms
+      #更改后需重启服务器
+      plugin: decentholograms
+      #全息文字偏移
+      offset:
+        x: 0.5
+        y: 2
+        z: 0.5
+      text:
+        - '&6&l烹饪锅'
+        - '&e烹饪: &a%cook%'
+        - '&e烹饪进度: &a%progress%'
+        - '&f[ &b右键烹饪锅操作 &f]'
+    put:
+      #当玩家距离烹饪锅多远时自动移除烹饪锅
+      break_distance: 10
+      #当玩家输入放置烹饪锅指令时指针所指的位置最远放置距离
+      max_put_distance: 4
+      #放置限制
+      limit:
+        world:
+          # 是否启用白名单模式（只有在该名单内的世界能放置）
+          whiteblack: false
+          #当whiteblack为false时下面的世界无法放置烹饪锅
+          list:
+            - 'testworldname'
+            - 'xxx'
+  sound:
+    cook_put: ITEM_BOTTLE_FILL
+    cook_begin: BLOCK_NOTE_BELL
+  effect:
+    progress: DRIP_LAVA
+    success: VILLAGER_HAPPY
+    fail: VILLAGER_ANGRY

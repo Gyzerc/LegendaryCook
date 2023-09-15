@@ -1,0 +1,27 @@
+title: '&e所有类别'
+size: 36
+customItems:
+  cat1:
+    display: '&e普通食物类'
+    material: PAPER
+    amount: 1
+    data: 0
+    model: 0
+    lore:
+      - ''
+      - '&f- &e点击进入'
+    slot: [13]
+    fuction:
+      type: categorize
+      value: 普通食物
+  close:
+    display: '&c关闭'
+    material: BARRIER
+    amount: 1
+    data: 0
+    model: 0
+    lore:
+      - ''
+    slot: [31]
+    fuction:
+      type: close

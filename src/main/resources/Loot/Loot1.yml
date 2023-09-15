@@ -1,0 +1,54 @@
+loots:
+  奖励组1:
+    #权重 越低越先判断
+    weight: 0
+    #配方熟练度范围 （包括）
+    recipe-experience:
+      min: 41.0
+      max: 50.0
+    #烹饪等级要求
+    level: 0
+    #执行几率
+    chance: 1.0
+    #随机获得10-20个
+    item: 'default;DIAMOND;0;10-20'
+    run:
+      - '[message]&a由于你对该配方太过熟练于是你额外获得了最好的奖励！'
+  奖励组2:
+    weight: 1
+    recipe-experience:
+      min: 31.0
+      max: 40.0
+    level: 0
+    chance: 1.0
+    #随机获得5-10个
+    item: 'default;DIAMOND;0;5-10'
+    run:
+      - '[message]&a由于你对该配方还算熟练于是你额外获得额外的奖励！'
+  基础奖励:
+    weight: 3
+    recipe-experience:
+      min: 0.0
+      max: 50.0
+    level: 0
+    chance: 1.0
+    item: 'default;BREAD;0;1'
+    run:
+      - '[message]&a这是你应得的！'
+  vip:
+    weight: 4
+    recipe-experience:
+      min: -1
+      max: -1
+    placeholder_equals:
+      method: all
+      placeholders:
+        papi1:
+          equal: '='
+          name: '%vip%'
+          value: 'yes'
+    level: 0
+    chance: 1.0
+    item: 'default;NETHER_STAR;0;1'
+    run:
+      - '[message]&e你获得了vip专属奖励！'

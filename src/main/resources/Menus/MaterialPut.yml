@@ -1,0 +1,97 @@
+title: '&0当前火候: &a%hot%'
+size: 54
+#材料投放的位置
+put_slot: 13
+#fuction:
+# null: 点击后没有任何效果，为装饰
+# confirm: 确认投入材料按钮
+# cancel: 取消炼制按钮
+# run: 点击后执行命令组，可参考wiki命令组部分
+#写法示例：                    fuction:
+#                              type: run
+#                              value:
+#                               - 'xx'
+#                               - 'xxx'
+customItems:
+  i1:
+    material: STAINED_GLASS_PANE
+    data: 0
+    amount: 1
+    model: 0
+    display: '&f '
+    lore:
+      - ''
+    slot: [0,1,7,8,9,17,18,26,27,28,34,35,36,37,38,42,43,44]
+    fuction:
+      type: null
+  i2:
+    material: STAINED_GLASS_PANE
+    data: 5
+    amount: 1
+    model: 0
+    display: '&f '
+    lore:
+      - ''
+    slot: [2,6,10,11,15,16,19,20,24,25]
+    fuction:
+      type: null
+  i3:
+    material: STAINED_GLASS_PANE
+    data: 4
+    amount: 1
+    model: 0
+    display: '&e此处投放材料'
+    lore:
+      - ''
+    slot: [3,4,5,12,14,21,22,23]
+    fuction:
+      type: null
+  i4:
+    material: STAINED_GLASS_PANE
+    data: 1
+    amount: 1
+    model: 0
+    display: '&f '
+    lore:
+      - ''
+    slot: [29,30,32,33,39,40,41]
+    fuction:
+      type: null
+  i5:
+    material: STAINED_GLASS_PANE
+    data: 9
+    amount: 1
+    model: 0
+    display: '&f '
+    lore:
+      - ''
+    slot: [53,52,51,50,48,47,46,45]
+    fuction:
+      type: null
+  confirm:
+    material: WOOL
+    data: 0
+    amount: 1
+    model: 0
+    display: '&f&l# &e点击确认投入 &f&l#'
+    lore:
+      - ''
+      - '&f提示'
+      - ' - &7注意把控&a火候&7以及材料投入&a数量'
+    slot: [31]
+    fuction:
+      type: confirm
+  cancel:
+    material: BARRIER
+    data: 0
+    amount: 1
+    model: 0
+    display: '&c取消烹饪'
+    lore:
+      - ''
+      - '&f提示'
+      - ' - &7点击后取消本次烹饪'
+      - ' - &#e0ffff并返回以及投入的材料.'
+    slot: [49]
+    fuction:
+      type: cancel
